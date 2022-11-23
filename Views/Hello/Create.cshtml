@@ -1,0 +1,30 @@
+@model App.Models.DogViewModel;
+
+<h1 class="mb-4">Create a Dog!</h1>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>My New Doggo</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-controller="Hello" asp-action="CreateDog" method="post">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input asp-for=Name type="text" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Age</label>
+                        <input asp-for=Age type="number" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary mt-3">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    

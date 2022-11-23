@@ -1,0 +1,9 @@
+@model List<App.Models.DogViewModel>
+
+<h1 class="mb-4">Dogs</h1>
+
+<ul>
+    @foreach (var dog in Model) {
+        <li>Doggo @dog.Name, aged @dog.Age</li>
+    }
+</ul>
